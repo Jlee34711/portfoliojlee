@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Page</title>
   <style>
     body {
@@ -12,35 +12,57 @@
       flex-direction: column;
       min-height: 100vh;
     }
+
     header {
       background-color: #0dc5f3;
-      color: rgb(14, 113, 226);
+      color: white;
       padding: 1em;
     }
+
     nav a {
       color: white;
       margin-right: 1em;
       text-decoration: none;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     main {
       display: flex;
       flex: 1;
       padding: 1em;
+      flex-wrap: wrap;
     }
+
     section {
       flex: 3;
       padding-right: 1em;
     }
+
     aside {
       flex: 1;
       background-color: #f0f0f0;
       padding: 1em;
     }
+
     footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 1em;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+
+      section, aside {
+        padding: 0;
+        margin-bottom: 1em;
+      }
     }
   </style>
 </head>
@@ -58,12 +80,12 @@
 
   <main>
     <section>
-      <h2>Jack Lee's Contact</h2>
-      <p>This is Jack Lee's Contact</p>
+      <h2>Contact Jack Lee</h2>
+      <p>You can reach out to Jack via email or check back later for more contact options.</p>
     </section>
     <aside>
       <h3>No Social Media At The Moment</h3>
-      <p>TBD</p>
+      <p>More information to be added soon.</p>
     </aside>
   </main>
 
